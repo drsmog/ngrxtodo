@@ -1,0 +1,22 @@
+{
+  "name": "ngrxtodo",
+  "version": "1.0.0",
+  "description": "ngrx  todo app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drsmog/ngrxtodo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drsmog/ngrxtodo/issues"
+  },
+  "homepage": "https://github.com/drsmog/ngrxtodo#readme",
+  "dependencies": {
+    "express": "4.15.3"
+  }
+}
