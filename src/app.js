@@ -15,6 +15,5 @@ app.use('*', function (req, res) {
 })
 
 app.listen(3000, function (arguments) {
-    console.log(__dirname, __filename);
     console.log('start listening');
 });

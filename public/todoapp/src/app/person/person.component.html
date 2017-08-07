@@ -1,0 +1,11 @@
+<p>
+  person works!
+</p>
+
+<label for="">name</label>
+<input type="text" #personName>
+<label for="">email</label>
+<input type="text" #personEmail>
+<button (click)="addPerson(personName.value,personEmail.value)">add person</button>
+
+<app-person-listview [personList]="personList | async"></app-person-listview>

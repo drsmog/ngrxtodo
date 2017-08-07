@@ -1,0 +1,17 @@
+<p>
+  todo works!
+</p>
+
+<label for="todoTitle">Title</label>
+<input type="text" #todoTitle>
+<label for="todoDescription">Description</label>
+<input type="text" #todoDescription>
+
+<button (click)="add_todo(todoTitle.value,todoDescription.value)">add todo</button>
+
+<ul>
+  <li *ngFor="let item of todoList | async">
+    {{item.title}}-{{item.description}}
+    <app-person-listview [personList]="personList | async"></app-person-listview>
+  </li>
+</ul>
