@@ -14,6 +14,10 @@ app.use('*', function (req, res) {
     res.redirect('/');
 })
 
-app.listen(3000, function (arguments) {
+
+if (!process.env.HOST_ON_IIS)
+    process.env.PORT = 3000
+
+app.listen(process.env.PORT, function (arguments) {
     console.log('start listening');
 });
